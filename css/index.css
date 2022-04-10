@@ -1,17 +1,96 @@
+:root {
+  --red: #eb4132;
+  --green: #0b9e57;
+  --yellow: #fbbe00;
+  --blue: #3f87f5;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
 
 .navbar-brand img:first-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .navbar-brand {
-    font-size: 1.5em;
-    font-weight: 400;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
-.navbar-brand span {
-    font-weight: 700;
-    margin-right: 0.5em;
+.contenct-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 6em;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.header .left {
+  width: 66%;
+}
+
+.header .left h1 {
+  width: 66%;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.header .left h1 span:nth-child(1) {
+  color: var(--red);
+}
+.header .left h1 span:nth-child(2) {
+  color: var(--green);
+}
+.header .left h1 span:nth-child(3) {
+  color: var(--blue);
+}
+.header .left h1 span:nth-child(4) {
+  color: var(--yellow);
+}
+
+.header .left h1 small {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.header .left p {
+  position: relative;
+  font-family: Lato, sans-serif;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.header .left p:last-of-type {
+  position: relative;
+  font-family: Lato, sans-serif;
+  font-size: 1em;
+  overflow: hidden;
+  max-width: 80%;
+}
+
+.header .left p .hi {
+  display: inline-block;
+}
+
+.header .left p .text {
+  font-family: monospace, monospace;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.header .right {
+  width: 34%;
+  height: 480px;
+}
+
+.header .right .lottie-header {
+  height: 400px;
 }

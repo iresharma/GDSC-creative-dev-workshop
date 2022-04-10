@@ -7,18 +7,70 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./halfmoon/css/halfmoon-variables.min.css" />
     <link rel="stylesheet" href="./halfmoon/css/halfmoon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body>
+  <body
+    data-set-preferred-mode-onload="true"
+    class="page-wrapper with-navbar with-navbar-fixed-bottom"
+  >
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">
+        <img src="./assets/images/gdsc-left.png" alt="..." />
+        <img src="./assets/images/gdsc-right.png" alt="..." />
+        <span>GDSC</span> NIE
+      </a>
 
+      <ul class="navbar-nav d-none d-md-flex">
+        <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
+        <li class="nav-item active">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Discord</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
 
+      <form
+        class="form-inline d-none d-md-flex ml-auto"
+        action="..."
+        method="..."
+      >
+        <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px), ml-auto = margin-left: auto -->
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Email address"
+          required="required"
+        />
+        <button class="btn btn-primary" type="submit">Get Newsletter</button>
+        <button class="btn btn-square" type="button" onclick="switchTheme()">
+          <i id="switch-button" class="lni"></i>
+        </button>
+      </form>
+    </nav>
 
+    <div class="content-wrapper">...</div>
+    <!-- Navbar fixed bottom -->
+    <nav class="navbar navbar-fixed-bottom">what's up</nav>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/TextPlugin.min.js"></script>
-    <script src="./js/index.js" />
     <script src="./halfmoon/js/halfmoon.min.js"></script>
+    <script src="./js/index.js" />
   </body>
 </html>
